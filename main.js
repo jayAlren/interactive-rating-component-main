@@ -1,5 +1,6 @@
 function selectedScores() {
 	const gradeScores = document.querySelector('input[name="toggle-group"]:checked').value;
 
-	alert(gradeScores);
+	localStorage.setItem("inputValue", gradeScores);
+	
 }

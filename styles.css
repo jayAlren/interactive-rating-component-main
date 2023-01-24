@@ -33,7 +33,30 @@ body {
 	margin: 20px; /* margin(all sides) of 20 */
 }
 .content-ThankYou-Panel {
-	text-align: center;
+	display: grid;
+  place-items: center;
+  text-align: center;
+}
+.illustration-thank-you {
+	margin: 10px 0 20px 0;
+}
+.selectedGrade {
+	background-color: hsl(213, 19%, 18%); /* Dark Blue */
+	color: hsl(25, 97%, 53%); /* Orange */
+	display: block;
+	padding: 7px 20px;
+	margin: 0 0 20px 0;
+	border: none;
+	border-radius: 50px;
+}
+.thankYou-Header {
+	font-size: 24px; 
+	font-weight: 600; 
+	margin: 0 0 20px 0;
+}
+.thankYou-Foreword {
+	color: hsl(217, 12%, 63%); /* Light grey */
+
 }
 .star {
 	background-color: hsl(213, 19%, 18%); /* Dark Blue */
@@ -96,7 +119,7 @@ body {
   border: none;
   border-radius: 50%;
   margin: 0 12px 0 0;
-  color: hsl(217, 12%, 63%); /* Light grey */;
+  color: hsl(217, 12%, 63%); /* Light grey */
   cursor: pointer;
 }
 
@@ -165,9 +188,21 @@ footer a {
 		margin: 0 0 25px 0; /* margin(bottom only) of 120 */
 	}
 	.toggle-label {
-		margin: 0 16px 0 0; /* margin(right only) of 16 */
+		margin: 0 10px 0 0; /* margin(right only) of 16 */
 	}
-	.points {
-		
+	.toggle-buttons {
+		margin: 0 0 20px 0;
+	}
+	.illustration-thank-you {
+		margin: 15px 15px;
+	}
+	.selectedGrade {
+		margin: 15px 0 15px 0;
+	}
+	.thankYou-Header {
+		margin: 15px 0 15px 0;
+	}
+	.thankYou-Foreword {
+		margin: 10px 0 0 0;
 	}
 }
