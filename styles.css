@@ -1,0 +1,173 @@
+@import url('https://fonts.google.com/specimen/Overpass');
+
+/* color palettes
+- White: hsl(0, 0%, 100%)
+- Light Grey: hsl(217, 12%, 63%)
+- Medium Grey: hsl(216, 12%, 54%)
+- Dark Blue: hsl(213, 19%, 18%)
+- Very Dark Blue: hsl(216, 12%, 8%)
+*/
+* {
+	
+}
+
+body {
+	font-size: 15px;
+	font-family: 'Overpass', sans-serif;
+	font-weight: 400;
+	color: hsl(0, 0%, 100%);
+	background-color: hsl(216, 12%, 4%); /* Dark */
+}
+.container {
+	height: 345px;
+	width: 375px;
+	background-color: hsl(216, 12%, 8%); /* Very Dark Blue */
+	border: none;
+	border-radius: 30px;
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+}
+.content {
+	margin: 20px; /* margin(all sides) of 20 */
+}
+.content-ThankYou-Panel {
+	text-align: center;
+}
+.star {
+	background-color: hsl(213, 19%, 18%); /* Dark Blue */
+	height: 40px;
+	width: 40px;
+	display: grid;
+	place-items: center;
+	border: none;
+	border-radius: 50%;
+	margin: 0 0 20px 0; /* margin(bottom) of 20, 40 */
+}
+.header {
+	font-size: 32px;
+	font-weight: 700;
+	margin: 0 0 10px 0; /* margin(bottom) of 10, 50 */
+}
+.feedback-description {
+	color: hsl(217, 12%, 63%); /* Light grey */
+	line-height: 1.5;
+	margin: 0 0 20px 0; /* margin(bottom) of 20, 70 */
+}
+.likert {
+	width: 100%;
+	margin: 0 0 20px 0; /* margin(bottom) of 20, 90 */
+	display: none;
+}
+.points {
+	display: inline-grid;
+	place-items: center;
+	height: 50px;
+	width: 50px;
+	font-weight: 600;
+	background-color: hsl(213, 19%, 18%);
+	margin: 0 12px 0 0;
+	border: none;
+	border-radius: 50%;
+	color: hsl(217, 12%, 63%); /* Light grey */
+	cursor: pointer;
+}
+.points:hover {
+	background-color: hsl(217, 12%, 63%); /* Light grey */;
+	color: hsl(0, 0%, 100%); /* White */
+}
+.toggle-buttons {
+	margin: 0 0 20px 0;
+}
+/* Hide the radio buttons */
+.toggle-input {
+  display: none;
+}
+
+/* Style the labels */
+.toggle-label {
+  display: inline-grid;
+  place-items: center;
+  height: 50px;
+  width: 50px;
+  font-weight: 600;
+  background-color: hsl(213, 19%, 18%);
+  border: none;
+  border-radius: 50%;
+  margin: 0 12px 0 0;
+  color: hsl(217, 12%, 63%); /* Light grey */;
+  cursor: pointer;
+}
+
+.toggle-label:hover {
+	background-color: hsl(217, 12%, 63%); /* Light grey */;
+	color: hsl(0, 0%, 100%); /* White */
+}
+
+/* Style the active button */
+.toggle-input:checked + .toggle-label {
+  background-color: hsl(25, 97%, 53%); /* Orange */
+  color: white;
+}
+
+.submit {
+	display: inline-block;
+	width: 100%;
+	padding: 12px 0;
+	font-weight: 600;
+	background-color: hsl(25, 97%, 53%); /* Orange */
+	border: none;
+	border-radius: 50px;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 4px;
+	cursor: pointer;
+}
+.submit:hover {
+	background-color: hsl(0, 0%, 100%);
+	color: hsl(25, 97%, 53%); /* Orange */
+}
+
+footer {
+	font-size: 12px; 
+	text-align: center;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	padding: 10px 0;
+	border-top: 1px dashed hsl(217, 12%, 63%);
+
+}
+footer a {
+	color: hsl(0, 0%, 100%);
+}
+
+@media screen and (max-width: 600px) {
+	.container {
+		height: 60%;
+		width: 70%;
+	}
+	.content {
+		margin: 30px; /* margin(all sides) of 30 */
+	}
+	.star {
+		margin: 0 0 25px 0; /* margin(bottom only) of 55 */
+	}
+	.header {
+		margin: 0 0 15px 0; /* margin(bottom only) of 70 */
+	}
+	.feedback-description {
+		margin: 0 0 25px 0; /* margin(bottom only) of 95 */
+	}
+	.likert {
+		margin: 0 0 25px 0; /* margin(bottom only) of 120 */
+	}
+	.toggle-label {
+		margin: 0 16px 0 0; /* margin(right only) of 16 */
+	}
+	.points {
+		
+	}
+}
